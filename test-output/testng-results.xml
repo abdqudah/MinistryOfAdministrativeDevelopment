@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-03T12:52:32 EET" name="Suite" finished-at="2021-11-03T12:53:17 EET" duration-ms="45785">
+    <groups>
+    </groups>
+    <test started-at="2021-11-03T12:52:32 EET" name="Test" finished-at="2021-11-03T12:53:17 EET" duration-ms="45785">
+      <class name="labourAndSocialAffairs.HomePage">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:labourAndSocialAffairs.HomePage@a3d8174]" started-at="2021-11-03T12:52:50 EET" name="initialize" finished-at="2021-11-03T12:52:57 EET" duration-ms="6995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:labourAndSocialAffairs.HomePage@a3d8174]" started-at="2021-11-03T12:52:57 EET" name="basePageNavigation" data-provider="getData" finished-at="2021-11-03T12:53:01 EET" duration-ms="3750" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abdelhadi.qudah@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234567]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TEST CASE 1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:labourAndSocialAffairs.HomePage@a3d8174]" started-at="2021-11-03T12:53:01 EET" name="tearDown" finished-at="2021-11-03T12:53:01 EET" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:labourAndSocialAffairs.HomePage@a3d8174]" started-at="2021-11-03T12:53:01 EET" name="initialize" finished-at="2021-11-03T12:53:09 EET" duration-ms="7775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:labourAndSocialAffairs.HomePage@a3d8174]" started-at="2021-11-03T12:53:09 EET" name="basePageNavigation" data-provider="getData" finished-at="2021-11-03T12:53:13 EET" duration-ms="3785" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[a.qudah@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1122334455]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TEST CASE 2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:labourAndSocialAffairs.HomePage@a3d8174]" started-at="2021-11-03T12:53:13 EET" name="tearDown" finished-at="2021-11-03T12:53:13 EET" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- labourAndSocialAffairs.HomePage -->
+      <class name="labourAndSocialAffairs.ValidateNavigationBar">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:labourAndSocialAffairs.ValidateNavigationBar@3d5c822d]" started-at="2021-11-03T12:52:32 EET" name="initialize" finished-at="2021-11-03T12:52:41 EET" duration-ms="9605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validateBar()[pri:0, instance:labourAndSocialAffairs.ValidateNavigationBar@3d5c822d]" started-at="2021-11-03T12:53:13 EET" name="validateBar" finished-at="2021-11-03T12:53:13 EET" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBar -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:labourAndSocialAffairs.ValidateNavigationBar@3d5c822d]" started-at="2021-11-03T12:53:13 EET" name="tearDown" finished-at="2021-11-03T12:53:13 EET" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- labourAndSocialAffairs.ValidateNavigationBar -->
+      <class name="labourAndSocialAffairs.ValidateTitle">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:labourAndSocialAffairs.ValidateTitle@6f46426d]" started-at="2021-11-03T12:52:41 EET" name="initialize" finished-at="2021-11-03T12:52:50 EET" duration-ms="9303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validateTitle()[pri:0, instance:labourAndSocialAffairs.ValidateTitle@6f46426d]" started-at="2021-11-03T12:53:13 EET" name="validateTitle" finished-at="2021-11-03T12:53:13 EET" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:labourAndSocialAffairs.ValidateTitle@6f46426d]" started-at="2021-11-03T12:53:13 EET" name="tearDown" finished-at="2021-11-03T12:53:17 EET" duration-ms="4160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- labourAndSocialAffairs.ValidateTitle -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
