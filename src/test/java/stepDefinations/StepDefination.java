@@ -2,6 +2,7 @@ package stepDefinations;
 
 import java.io.IOException;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -28,19 +29,27 @@ public class StepDefination extends Base {
 		LandingPage land = new LandingPage(driver);
 		land.getSignIn().click();
 	}
-	@When("User enters {string} and {string} and log in")
-	public void user_enters_and_and_log_in(String string, String string2) {
-	    // Write code here that turns the phrase above into concrete actions
+	
+	@When("^User enters (.+) and (.+) and log in$")
+    public void user_enters_and_and_log_in(String username, String password) throws Throwable {
+		
 		LoginPage loge = new LoginPage(driver);
-		loge.getEmailAddress().sendKeys(string);
-		loge.getPassword().sendKeys(string2);
+		loge.getEmailAddress().sendKeys(username);
+		loge.getPassword().sendKeys(password);
 		loge.getLogin().click();
-
-	}
+    }
+	
 	@Then("Verify that user is successfully looged in")
 	public void verify_that_user_is_successfully_looged_in() {
 	    // Write code here that turns the phrase above into concrete actions
 	    
 	}
+	
+	  @And("^Close the browser$")
+	    public void close_the_browser() throws Throwable {
+		  driver.quit();
+	  
+	  }
+
 
 }
