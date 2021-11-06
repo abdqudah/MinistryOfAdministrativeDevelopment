@@ -1,10 +1,14 @@
 package resources;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -21,7 +25,7 @@ public class Base {
 	{
 		//Create connection with the file that related to data properties
 	    prop = new Properties();
-		FileInputStream fis = new FileInputStream("C:\\Users\\Lenovo\\eclipse-workspace\\MinistryOfAdministrativeDevelopment\\src\\main\\java\\Resources\\data.properties");
+		FileInputStream fis = new FileInputStream("C:\\Users\\abdel\\MinistryOfAdministrativeDevelopment\\src\\main\\java\\resources\\data.properties");
 		prop.load(fis);
 		
 		//Save the value to use it
@@ -53,6 +57,16 @@ public class Base {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
 		return driver;
+		
+	}
+	
+	public String getScreenShotPath(String testMethodName, WebDriver driver) throws IOException {
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testMethodName+".png";
+		FileUtils.copyFile(source, new File(destinationFile));
+		
+		return destinationFile;
 		
 	}
 	

@@ -5,6 +5,7 @@ import static org.testng.Assert.assertTrue;
 import java.io.IOException;
 
 import org.apache.log4j.LogManager;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -14,7 +15,8 @@ import resources.Base;
 
 public class ValidateTitle extends Base {
 
-	
+	public WebDriver driver;
+
 	public static org.apache.log4j.Logger log = LogManager.getLogger(Base.class.getName());
 
 	@BeforeTest

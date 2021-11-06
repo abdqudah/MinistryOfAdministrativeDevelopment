@@ -3,6 +3,7 @@ package labourAndSocialAffairs;
 import java.io.IOException;
 
 import org.apache.log4j.LogManager;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -14,6 +15,8 @@ import resources.Base;
 
 public class HomePage extends Base{
 	
+	public WebDriver driver;
+
 	public static org.apache.log4j.Logger log = LogManager.getLogger(Base.class.getName());
 	
 	@BeforeMethod
