@@ -1,0 +1,5 @@
+11:41:20.505 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+11:41:20.513 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "0[\r][\n]"
+11:41:20.513 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+11:41:20.514 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {s}->https://reqres.in:443] can be kept alive indefinitely
+11:41:20.514 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0

@@ -1,4 +1,7 @@
 labourAndSocialAffairs\ValidateTitle.class
 labourAndSocialAffairs\AppTest.class
+labourAndSocialAffairs\Listeners.class
 labourAndSocialAffairs\ValidateNavigationBar.class
+cucumberOptions\TestRunner.class
+stepDefinations\StepDefination.class
 labourAndSocialAffairs\HomePage.class

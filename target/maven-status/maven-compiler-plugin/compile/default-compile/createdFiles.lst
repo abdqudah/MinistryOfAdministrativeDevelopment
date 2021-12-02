@@ -1,4 +1,6 @@
 pageObjects\LandingPage.class
 pageObjects\LoginPage.class
+resources\RestClient.class
 resources\Base.class
 labourAndSocialAffairs\App.class
+resources\ExtentReporterNG.class

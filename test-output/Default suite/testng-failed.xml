@@ -5,7 +5,7 @@
     <classes>
       <class name="labourAndSocialAffairs.HomePage">
         <methods>
-          <include name="basePageNavigation"/>
+          <include name="basePageNavigation" invocation-numbers="0"/>
           <include name="initialize"/>
           <include name="tearDown"/>
         </methods>

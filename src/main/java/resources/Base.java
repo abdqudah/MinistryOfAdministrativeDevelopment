@@ -25,7 +25,8 @@ public class Base {
 	{
 		//Create connection with the file that related to data properties
 	    prop = new Properties();
-		FileInputStream fis = new FileInputStream("C:\\Users\\abdel\\MinistryOfAdministrativeDevelopment\\src\\main\\java\\resources\\data.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\data.properties");
+		//C:\\Users\\Lenovo\\MinistryOfAdministrativeDevelopment\\src\\main\\java\\resources\\data.properties
 		prop.load(fis);
 		
 		//Save the value to use it

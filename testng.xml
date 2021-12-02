@@ -5,6 +5,7 @@
 <listeners>
 
  <listener class-name="labourAndSocialAffairs.Listeners"></listener>
+<!--  <listener class-name="resources.ExtentReporterNG"> </listener> -->
 
 </listeners>
 

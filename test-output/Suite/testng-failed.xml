@@ -4,17 +4,6 @@
   <listeners>
     <listener class-name="labourAndSocialAffairs.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="validatingTitle(failed)">
-    <classes>
-      <class name="labourAndSocialAffairs.ValidateTitle">
-        <methods>
-          <include name="tearDown"/>
-          <include name="validateTitle"/>
-          <include name="initialize"/>
-        </methods>
-      </class> <!-- labourAndSocialAffairs.ValidateTitle -->
-    </classes>
-  </test> <!-- validatingTitle(failed) -->
   <test thread-count="5" parallel="tests" name="ValidatingNavigationBar(failed)">
     <classes>
       <class name="labourAndSocialAffairs.ValidateNavigationBar">
@@ -26,15 +15,4 @@
       </class> <!-- labourAndSocialAffairs.ValidateNavigationBar -->
     </classes>
   </test> <!-- ValidatingNavigationBar(failed) -->
-  <test thread-count="5" parallel="tests" name="ValidatingLoginPage(failed)">
-    <classes>
-      <class name="labourAndSocialAffairs.HomePage">
-        <methods>
-          <include name="basePageNavigation"/>
-          <include name="initialize"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- labourAndSocialAffairs.HomePage -->
-    </classes>
-  </test> <!-- ValidatingLoginPage(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -2,6 +2,11 @@ package stepDefinations;
 
 import java.io.IOException;
 
+import org.apache.log4j.LogManager;
+import org.openqa.selenium.WebDriver;
+
+import com.aventstack.extentreports.model.Log;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -11,18 +16,23 @@ import pageObjects.LoginPage;
 import resources.Base;
 
 public class StepDefination extends Base {
+	public WebDriver driver;
+	
+	public static org.apache.log4j.Logger log = LogManager.getLogger(Base.class.getName());
 
 	@Given("Initialize the browser with chrome")
 	public void initialize_the_browser_with_chrome() throws IOException {
 	    // Write code here that turns the phrase above into concrete actions
 		driver = initializeDriver();
+		log.info("Hello Abdelhadi");
+		
 	}
-	@Given("Navigate to {string} site")
-	public void navigate_to_site(String URL) {
-	    // Write code here that turns the phrase above into concrete actions
-		driver.get(URL);
+	@Given("^Navigate to GOV site$")
+    public void navigate_to_gov_site() throws Throwable {
+		
+		driver.get(prop.getProperty("URL"));
+    }
 	
-	}
 	@Given("click on the login link in home page to land on secure sign in page")
 	public void click_on_the_login_link_in_home_page_to_land_on_secure_sign_in_page() {
 	    // Write code here that turns the phrase above into concrete actions
